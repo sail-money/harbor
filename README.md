@@ -1,42 +1,70 @@
-# Harbor registry — setup
+# Harbor
 
-These files bootstrap the public Harbor registry repo (`sail-money/harbor`). `sailor share`
-opens PRs into it; `sailor harbor list` and `sailor clone` read from it; and
-`sailor harbor create` downloads a released agent from it.
+> The library of ready-to-run money agents on Sail Protocol.
 
-## Layout
+[![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
-```
-projects/<slug>/                        # one shared project per folder (added by `sailor share` PRs)
-projects/.gitkeep                       # keeps the empty projects/ dir tracked in git
-.github/workflows/release-on-merge.yml  # packages a merged project into a tagged release asset
-.github/PULL_REQUEST_TEMPLATE/share.md  # review checklist
-```
+**Harbor** is the library of ready-to-run money agents, built on [Sailor](https://github.com/sail-money/Sailor). Sailor is the harness that turns any AI coding agent into a builder and operator of DeFi agents; Harbor ships complete, installable agents you start with one command instead of building from scratch.
 
-## How it works
+Capital stays in your own **separately managed account (SMA)**. A Harbor agent never holds your private key and acts only through a **mandate** — deterministic onchain permissions checked on every transaction. That is what makes a Harbor agent safe to run with real money.
 
-1. `sailor share` (run inside an operator's project) builds a sanitized copy, opens a
-   PR adding `projects/<slug>/`.
-2. A maintainer reviews (the PR template checklist) and merges to `main`.
-3. `release-on-merge.yml` packages `projects/<slug>/` as `<slug>.tar.gz` and publishes a
-   release tagged `<slug>-v<n>` (auto-incrementing).
-4. `sailor clone <source>` and `sailor harbor create <slug>` download that asset.
+## Where Harbor sits
 
-## Metrics
+| Layer | What it is | What it does |
+|---|---|---|
+| [Sail Protocol](https://github.com/sail-money/Protocol) | the onchain primitive | SMAs and the kernel that enforces mandates |
+| [Sailor](https://github.com/sail-money/Sailor) | the harness | build and operate agents |
+| **Harbor** (this repo) | the library | ready-to-run agents, one command from running |
 
-Per-project download counts come from the release asset `download_count`:
+## What a Harbor agent is
+
+An agent in Harbor is a **blueprint**: a portable, verified package of a whole agent — its skills, its runtime, its permission contracts, and its operating guide. One command starts it, and your coding agent walks the onboarding.
+
+### The index agent (the flagship)
+
+Send USDC and the agent handles the rest. You name the basket and the weights; it invests every deposit, rebalances toward target, and bridges across chains. Onboarding asks a few straight questions:
+
+- Which tokens, and what weight for each
+- Invest every time you send, or a set amount on a schedule
+- How often to rebalance
+- Whether you want Telegram reports, and how often
+
+It ships with a local dashboard and cost-basis tracking, so you see your portfolio, your unrealized return, and what is in band versus out of band.
+
+## Getting started
 
 ```bash
-gh api repos/sail-money/harbor/releases \
-  --jq '.[] | "\(.tag_name): \(.assets[]?.download_count // 0)"'
+npx @sail.money/sailor harbor create index
 ```
 
-This is the number a future rewards layer reads. Note: `download_count` is a raw,
-unauthenticated CDN counter — fine for a popularity leaderboard, not trustworthy as a
-payout ledger. For real rewards, front downloads with an authenticated proxy + DB.
+This resolves the blueprint from this registry, scaffolds the project, installs dependencies, and opens your coding agent to onboard it.
 
-## Setup steps
+Browse the library:
 
-1. Create the repo `sail-money/harbor` (public).
-2. Copy `.github/` and `projects/` (including `.gitkeep`) into it; commit to `main`.
-3. Ensure the share token (`SAIL_GH_TOKEN`) has `contents: write` + `pull_requests: write`.
+```bash
+npx @sail.money/sailor harbor list
+```
+
+Harbor is in active development on the Sailor `feature/harbor` branch; the `sailor harbor` command ships with the next Sailor release.
+
+## How the library works
+
+Released blueprints live here as GitHub releases tagged `<slug>-v<n>`. The flow:
+
+1. `sailor harbor publish` packages an agent and opens a release.
+2. `sailor harbor list` searches the library.
+3. `sailor harbor create <slug>` downloads and starts a released agent.
+
+Download counts on the release assets are the popularity metric.
+
+## Trust
+
+A blueprint is verified for **integrity** — every file is hashed and checked — not for publisher identity. Read the import plan before you approve it. Authority always stays bounded by your own keys and your onchain mandate. Blueprint signing and registry trust are separate, later concerns.
+
+## Contributing
+
+Harbor is built for community agents. Publish one with `sailor harbor publish`, or open a pull request against an existing blueprint. Start with the [Sailor contributing guide](https://github.com/sail-money/Sailor/blob/main/CONTRIBUTING.md).
+
+## License
+
+[MIT](./LICENSE) © Agentic Finance Inc.
