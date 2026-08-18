@@ -8,6 +8,12 @@
 
 Capital stays in your own **separately managed account (SMA)**. A Harbor agent never holds your private key and acts only through a **mandate**: deterministic onchain permissions checked on every transaction. That is what makes a Harbor agent safe to run with real money.
 
+## Available agents
+
+| Agent | Description |
+|---|---|
+| **Index** | Invest USDC into a weighted token basket and keep it rebalanced across the chains you choose. |
+
 ## Where Harbor sits
 
 | Layer | What it is | What it does |
