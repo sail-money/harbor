@@ -4,9 +4,9 @@
 
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
-**Harbor** is the library of ready-to-run money agents, built on [Sailor](https://github.com/sail-money/Sailor). Sailor is the harness that turns any AI coding agent into a builder and operator of DeFi agents; Harbor ships complete, installable agents you start with one command instead of building from scratch.
+**Harbor** is the library of ready-to-run money agents, built on [Sailor](https://github.com/sail-money/Sailor). Sailor is the harness that turns any AI coding agent into a builder and operator of money agents; Harbor ships complete, installable agents you start with one command instead of building from scratch.
 
-Capital stays in your own **separately managed account (SMA)**. A Harbor agent never holds your private key and acts only through a **mandate** — deterministic onchain permissions checked on every transaction. That is what makes a Harbor agent safe to run with real money.
+Capital stays in your own **separately managed account (SMA)**. A Harbor agent never holds your private key and acts only through a **mandate**: deterministic onchain permissions checked on every transaction. That is what makes a Harbor agent safe to run with real money.
 
 ## Where Harbor sits
 
@@ -18,32 +18,18 @@ Capital stays in your own **separately managed account (SMA)**. A Harbor agent n
 
 ## What a Harbor agent is
 
-An agent in Harbor is a **blueprint**: a portable, verified package of a whole agent — its skills, its runtime, its permission contracts, and its operating guide. One command starts it, and your coding agent walks the onboarding.
+An agent in Harbor is a **blueprint**: a portable, verified package of a whole agent: its skills, its runtime, its permission contracts, and its operating guide. One command starts it, and your coding agent walks the onboarding.
 
-### The index agent (the flagship)
-
-Send USDC and the agent handles the rest. You name the basket and the weights; it invests every deposit, rebalances toward target, and bridges across chains. Onboarding asks a few straight questions:
-
-- Which tokens, and what weight for each
-- Invest every time you send, or a set amount on a schedule
-- How often to rebalance
-- Whether you want Telegram reports, and how often
-
-It ships with a local dashboard and cost-basis tracking, so you see your portfolio, your unrealized return, and what is in band versus out of band.
+Every agent is different: its own strategy, its own onboarding questions, its own dashboard and reports. What they share is the safety model: self-custody, an onchain mandate, and a fail-closed permission check on every transaction.
 
 ## Getting started
 
 ```bash
-npx @sail.money/sailor harbor create index
+npx @sail.money/sailor harbor list           # see the agents available
+npx @sail.money/sailor harbor create <slug>  # create one and begin onboarding
 ```
 
-This resolves the blueprint from this registry, scaffolds the project, installs dependencies, and opens your coding agent to onboard it.
-
-Browse the library:
-
-```bash
-npx @sail.money/sailor harbor list
-```
+`harbor create` resolves the blueprint from this registry, scaffolds the project, installs dependencies, and opens your coding agent to onboard it.
 
 Harbor is in active development on the Sailor `feature/harbor` branch; the `sailor harbor` command ships with the next Sailor release.
 
@@ -59,7 +45,7 @@ Download counts on the release assets are the popularity metric.
 
 ## Trust
 
-A blueprint is verified for **integrity** — every file is hashed and checked — not for publisher identity. Read the import plan before you approve it. Authority always stays bounded by your own keys and your onchain mandate. Blueprint signing and registry trust are separate, later concerns.
+A blueprint is verified for **integrity** (every file is hashed and checked), not for publisher identity. Read the import plan before you approve it. Authority always stays bounded by your own keys and your onchain mandate. Blueprint signing and registry trust are separate, later concerns.
 
 ## Contributing
 
