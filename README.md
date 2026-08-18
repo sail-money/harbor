@@ -6,7 +6,7 @@
 
 **Harbor** is the library of ready-to-run money agents, built on [Sailor](https://github.com/sail-money/Sailor). Sailor is the harness that turns any AI coding agent into a builder and operator of money agents; Harbor ships complete, installable agents you start with one command instead of building from scratch.
 
-Capital stays in your own **separately managed account (SMA)**. A Harbor agent never holds your private key and acts only through a **mandate**: deterministic onchain permissions checked on every transaction. That is what makes a Harbor agent safe to run with real money.
+A Harbor agent never holds your private key and acts only through a **mandate**: deterministic onchain permissions checked on every transaction. That is what makes a Harbor agent safe to run with real money.
 
 ## Available agents
 
