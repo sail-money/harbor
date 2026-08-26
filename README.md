@@ -30,31 +30,14 @@ Every agent is different: its own strategy, its own onboarding questions, its ow
 
 ## Getting started
 
-```bash
-npx @sail.money/sailor harbor list           # see the agents available
-npx @sail.money/sailor harbor create <slug>  # create one and begin onboarding
-```
-
-`harbor create` resolves the blueprint from this registry, scaffolds the project, installs dependencies, and opens your coding agent to onboard it.
-
-Harbor is in active development on the Sailor `feature/harbor` branch; the `sailor harbor` command ships with the next Sailor release.
-
-## Beta testing
-
-Harbor ships through the `@dev` tag while it is in development. Two commands and you are in:
+Two commands and you are in:
 
 ```bash
-npm install -g @sail.money/sailor@dev     # the Harbor build
-sailor harbor create portfolio            # start the portfolio agent
+npm install -g @sail.money/sailor@latest
+sailor harbor create portfolio
 ```
 
-That installs Sailor with Harbor enabled, pulls the portfolio agent blueprint, scaffolds the project, installs dependencies, typechecks everything, and opens your coding agent to onboard you. Your agent handles the rest: set up your account, name your assets and weights, lock it in with a mandate, and run.
-
-The Harbor registry is private during beta. If `harbor create` returns a 404, export a GitHub token first:
-
-```bash
-export GITHUB_TOKEN=*** auth token)
-```
+That installs Sailor, pulls the portfolio agent blueprint, scaffolds the project, installs dependencies, typechecks everything, and opens your coding agent to onboard you. Your agent handles the rest: set up your account, name your assets and weights, lock it in with a mandate, and run.
 
 No other setup. No keys to copy, no RPC endpoints to configure — the onboard walkthrough covers all of that after `create` finishes.
 
