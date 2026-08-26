@@ -39,6 +39,25 @@ npx @sail.money/sailor harbor create <slug>  # create one and begin onboarding
 
 Harbor is in active development on the Sailor `feature/harbor` branch; the `sailor harbor` command ships with the next Sailor release.
 
+## Beta testing
+
+Harbor ships through the `@dev` tag while it is in development. Two commands and you are in:
+
+```bash
+npm install -g @sail.money/sailor@dev     # the Harbor build
+sailor harbor create portfolio            # start the portfolio agent
+```
+
+That installs Sailor with Harbor enabled, pulls the portfolio agent blueprint, scaffolds the project, installs dependencies, typechecks everything, and opens your coding agent to onboard you. Your agent handles the rest: set up your account, name your assets and weights, lock it in with a mandate, and run.
+
+The Harbor registry is private during beta. If `harbor create` returns a 404, export a GitHub token first:
+
+```bash
+export GITHUB_TOKEN=*** auth token)
+```
+
+No other setup. No keys to copy, no RPC endpoints to configure — the onboard walkthrough covers all of that after `create` finishes.
+
 ## How the library works
 
 Released blueprints live here as GitHub releases tagged `<slug>-v<n>`. The flow:
