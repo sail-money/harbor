@@ -12,7 +12,7 @@ A Harbor agent never holds your private key and acts only through a **mandate**:
 
 | Agent | Description |
 |---|---|
-| **Index** | Invest USDC into a weighted token basket and keep it rebalanced across the chains you choose. |
+| **Portfolio** | Build a weighted portfolio of assets (tokens and tokenized stocks) and keep it rebalanced across the chains you choose. |
 
 ## Where Harbor sits
 
