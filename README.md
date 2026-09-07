@@ -13,6 +13,7 @@ A Harbor agent never holds your private key and acts only through a **mandate**:
 | Agent | Description |
 |---|---|
 | **Portfolio** | Build a weighted portfolio of assets (tokens and tokenized stocks) and keep it rebalanced across the chains you choose. |
+| **Onchain Finance Portfolio** | Hold the companies whose product is money — HYPE and UNI (exchange), AAVE and MORPHO (credit), SKY (yield), ZAMA (privacy) — rebalanced across Base and Ethereum. The basket ships with the agent; the thesis is in its [README](https://github.com/aadopii/onchain-finance-portfolio). |
 
 ## Where Harbor sits
 
@@ -34,7 +35,8 @@ Two commands and you are in:
 
 ```bash
 npm install -g @sail.money/sailor@latest
-sailor harbor create portfolio
+sailor harbor create portfolio                    # name your own basket
+sailor harbor create onchain-finance-portfolio    # start from the Onchain Finance Portfolio basket
 ```
 
 That installs Sailor, pulls the portfolio agent blueprint, scaffolds the project, installs dependencies, typechecks everything, and opens your coding agent to onboard you. Your agent handles the rest: set up your account, name your assets and weights, lock it in with a mandate, and run.
