@@ -1,0 +1,594 @@
+{
+  "schemaVersion": "shipwright.blueprint.manifest/v1",
+  "blueprint": {
+    "slug": "portfolio",
+    "version": "1.0.0",
+    "kind": "crystallized"
+  },
+  "digest": "sha256:45046b3da1ff8d39b7bc9984350363fa9f2bfa86dfc93ff5ee43c5f8da7a7eca",
+  "contents": [
+    {
+      "path": ".agents/skill-registry.json",
+      "sha256": "27a11abd14a476238345429d2b27eae54ea48e1948db11dd6e93c4fd5c5d3df5",
+      "bytes": 981,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-agent-build/SKILL.md",
+      "sha256": "614f21cf999c68e7a211305ff1e2ffab3958ba0336434bf58e8f081dc50dc6e0",
+      "bytes": 7873,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-agent-build/references/canonical-skeleton.md",
+      "sha256": "8f030fde7a03aac06dd36d2251ae436f2da255cf8658b9f8e0589c1155616bcf",
+      "bytes": 17852,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-agent-build/references/data-sources.md",
+      "sha256": "193f1008b13ece17639ba1c583b938c34e026440974cafb9122c6ce137472b2d",
+      "bytes": 2692,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-automation/SKILL.md",
+      "sha256": "904a2af9a366f426835e2af5447d4aaeb1b198660d153f72a3523a715aac2a91",
+      "bytes": 4307,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-automation/references/docker-vm.md",
+      "sha256": "b4fb3ecd42f97f1664d9142027302af8e379d0c63b22b5d505c99300b144e040",
+      "bytes": 2862,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-automation/references/github-actions.md",
+      "sha256": "e104cbe28f15bc394a40fc11975aa3d093b1abe5d4c3e9a60a69bc430ec2c775",
+      "bytes": 1650,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-automation/references/local-daemon.md",
+      "sha256": "2a650fbe4e0358d87a926267a96ac2d8447634afe86acae6f398930bc54cd646",
+      "bytes": 1361,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-automation/references/self-hosted-runner.md",
+      "sha256": "14bcb0e944cf88c31dd80f01bfecf986d8a7bdc8e2672988bb203b6cd9be419a",
+      "bytes": 2424,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-bridge/SKILL.md",
+      "sha256": "2eae0ec9356833be8fbf5960dd7d8547285dda4e9ad7c1ba5c6344a71aea0fa9",
+      "bytes": 9213,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-bridge/references/across-routes.json",
+      "sha256": "fdfcb5c1057b5ffbc03d75ea37b2ef944348dbb168860ba71cbbcc180dce4143",
+      "bytes": 2333,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-bridge/references/cctp-addresses.json",
+      "sha256": "d183330f0a273707cb6711b2175f6c808600ae612e352fba3469da793cf35d1d",
+      "bytes": 4761,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-extend/SKILL.md",
+      "sha256": "7aab02c224265067ff6effb387250095b895247c410197c1616315ab75639b03",
+      "bytes": 3991,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-mandate-planner/SKILL.md",
+      "sha256": "15c531b37c7b01360948a5a1343639ab56b07e5f6a720c498e915de135e70fb3",
+      "bytes": 15863,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-mandates/SKILL.md",
+      "sha256": "6fafe49d7f4b88995f984768e029790611eb970866cc0b0b7f3d5652d1503012",
+      "bytes": 15982,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-mandates/references/approvals.md",
+      "sha256": "bd981336748d6479a96405a3fcd1ae88a3d62fb64ea4d842f62c71b3ec26c924",
+      "bytes": 11209,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-mandates/references/authoring-patterns.md",
+      "sha256": "ae823b7773e75fb4bcbfc5d50e33080fef0fc8a66ad6c96e191f91d40316142e",
+      "bytes": 12155,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-mandates/references/calls-schema.md",
+      "sha256": "b999fcf38a634945d85eda5bf454c8ee462caf499d4f35ab5225f049f97bca87",
+      "bytes": 2216,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-mandates/references/constructor-args.md",
+      "sha256": "3a39a5b85a61c6ba6c200665658d5fd70c8781706dbaa3cb65400436b65506ce",
+      "bytes": 1642,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-mandates/references/dark-reverts.md",
+      "sha256": "2bdd8bead0ffeaae56e2488450640d9cf2343a628a41a01b4a952a62535e3d3c",
+      "bytes": 4342,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-mandates/references/simulate-calls.md",
+      "sha256": "3a43638a1ab826c788393f539569740906521adf8b1c14fb863281ccefb69646",
+      "bytes": 4103,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-mandates/references/venue-cookbook.md",
+      "sha256": "c2fd65f6964b78fe446efe72ed8f941d1f60299a8bd4694ea84734cc52b94031",
+      "bytes": 9608,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-memory/SKILL.md",
+      "sha256": "4af435ed1606291e28c673b8a5fcd86a078a99eaaf8906be01376b6e879acbb5",
+      "bytes": 6784,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-navigator/SKILL.md",
+      "sha256": "efba04bd88acd643f165938edee85f18fe5604a3172422c543744b25d8c08447",
+      "bytes": 7145,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-onboarding/SKILL.md",
+      "sha256": "dac7a0597b0e5bc4ebd975f1af7aa35fc3da5b780768d15b2416045325b171a0",
+      "bytes": 6865,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-onboarding/references/welcome-script.md",
+      "sha256": "94a18a12375d3ca9cabde56213595727e46e3be65ad65acd800cd89f64e0121e",
+      "bytes": 3222,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-operate/SKILL.md",
+      "sha256": "c678974274cc442990905580da6274fead2ee30fed9457e1763431f91fe52808",
+      "bytes": 9772,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-portfolio/SKILL.md",
+      "sha256": "e5a5245c33382317736b572a781cad8cedb0e299e68d65bd7ec6e2915d60c76e",
+      "bytes": 16328,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-portfolio/references/funding-paths.md",
+      "sha256": "d74d24350f580bb53819798c2a3c887fb474316727ae022152ef2ee1d7dd81a3",
+      "bytes": 6655,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-portfolio/references/portfolio-category.md",
+      "sha256": "f50c2ab2284afe092649673c7b34b274c10c66ddcad5b20dca364b5aa778546c",
+      "bytes": 7498,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-portfolio/references/portfolio-config.md",
+      "sha256": "c9fb7e54630f5471be546657bc41d3717ce21b76e686dfc2622e047ed27e4c99",
+      "bytes": 11417,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-portfolio/references/welcome-script.md",
+      "sha256": "2f7e9a78e5c8df05fbbdb104e81b13dbd053a81687f0f9e9844e728bebdd4ed4",
+      "bytes": 2272,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-project-info/SKILL.md",
+      "sha256": "2987ed140f1f5e51e304fc5d6ed6aea34bd115dcca0ad4568cff3a2a42fa8858",
+      "bytes": 5349,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-risk/SKILL.md",
+      "sha256": "3091b9208927fa23b1310c7eec94fa5c760f18b5384aa65f4143ce197465cc8e",
+      "bytes": 4998,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-risk/references/risk-dimensions.md",
+      "sha256": "22b841e817527a671f2ce7a821f67d146f9ff7d421dce5e744fbce4841825d26",
+      "bytes": 4861,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-servers/SKILL.md",
+      "sha256": "62eeb82f17eec63304647030bb42e89c0ab400d8a259af126d25d0613bdd4069",
+      "bytes": 7568,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-strategy/SKILL.md",
+      "sha256": "9bf4cdba6dfb1e6ee5e51c40adb87121d2ba830246bf335e374879932f574701",
+      "bytes": 12149,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-strategy/references/category-contract.md",
+      "sha256": "0c405a08ca7b8ba540778a7c749648841c32d9094eb1ff988926e555a5af0257",
+      "bytes": 2407,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-strategy/references/execution-config.md",
+      "sha256": "baa128669c1615f28c2f23d45ce077abd403ef76a8c236381152dd509a128299",
+      "bytes": 6787,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-strategy/references/payments.md",
+      "sha256": "0327dec0090e2c7f0a782601297bd2baf73273119eb6e9576f5bc46d9f3d9c0a",
+      "bytes": 2879,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-strategy/references/possibility-map.md",
+      "sha256": "b72c7bed7caf5e98296fedafb69ba131c79691a65a412eef28f85e91691cb002",
+      "bytes": 6057,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-strategy/references/strategy-template.md",
+      "sha256": "8158ff6a65be42ffb6a71bd85713c2063e4e32354a3076af25c1f41e203a2ef4",
+      "bytes": 5056,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-strategy/references/trading.md",
+      "sha256": "c11537276411d3535641e9f7130290b940a5ccf3cd4a8a5dfd3e26c7d2f26bd5",
+      "bytes": 10963,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-strategy/references/yield.md",
+      "sha256": "62868aba6da8cffe45b8621745a2c6972bf5d4b55f0d6f60b4150590289f4ed9",
+      "bytes": 6062,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-swap-quote/SKILL.md",
+      "sha256": "61b96fcada74bc25737b82fdfcf6f8c58a8eaac8eaa4213a4645002a5052fef8",
+      "bytes": 4696,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/SKILL.md",
+      "sha256": "73f50372034f21d3073eb9af253a24b6371771b6c91ae889d2d47c5057650cd5",
+      "bytes": 10328,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/catalog.mjs",
+      "sha256": "d013e7dd0b2540c42c49fd4b4bfec1510c3d542600a30bd2aa76bed4b37ef9c9",
+      "bytes": 10551,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/deployed.json",
+      "sha256": "4c281ef32fd4e664a1c59e01084cce00cd7802d9ba4c4eecf1a05e8baaf79549",
+      "bytes": 10420,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/oracles/IOracle.sol",
+      "sha256": "38344f8b6a1d04dac7c512b06f202593d5c4cff4bf85530b9e9df6c5abb8b0df",
+      "bytes": 529,
+      "role": "contract"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/oracles/UniV3TwapOracle.sol",
+      "sha256": "8df7993314fa4e5e856bed03dd4cb7eaba6aef71f8e8978800498128bec5e352",
+      "bytes": 5528,
+      "role": "contract"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/oracles/libs/FullMath.sol",
+      "sha256": "7d8bb4dabf2360736090f65e30053f680f66522607d639b9246f87b30ed12101",
+      "bytes": 2002,
+      "role": "contract"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/oracles/libs/TickMath.sol",
+      "sha256": "a527b69693d9cec3984f9596c1e7fa402f377603a23256bc12ee54229d765356",
+      "bytes": 2998,
+      "role": "contract"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/references/approve-batch.md",
+      "sha256": "ad633e5d00715602df735606ecd2b7a5c6e456f614f2861148ea954cef7e0c71",
+      "bytes": 7411,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/references/borrow.md",
+      "sha256": "b85909380b7cf58a10a3a7b9fc0f9ef15b4ddec18d3382a4f532f43913b6ac17",
+      "bytes": 8623,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/references/config-schemas.md",
+      "sha256": "65c03eb8a35256d3e441a76c208839fdb415df09f2caeca4c343583fab595731",
+      "bytes": 9372,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/references/deposit.md",
+      "sha256": "e5033c162f272e6fe9dc05f68a180843b033bde2d7bf4dc557bd7e0c12313cbe",
+      "bytes": 6675,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/references/reuse-flow.md",
+      "sha256": "1a17fa3f9d5e754eb6a7776c8b9c0deb6f22ccae2f41dde6724ab299b1986da2",
+      "bytes": 10185,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/references/swap-no-oracle.md",
+      "sha256": "6086ea646e9bdc75f049a6ec87c598c593111a59d5dc431d3ed022301bc74bac",
+      "bytes": 12299,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/references/swap.md",
+      "sha256": "834f0dd12ac12d0891a06fc043cab75fdaa2fc3bc54b42f81a222ecc41489a22",
+      "bytes": 16804,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/references/transfer.md",
+      "sha256": "e56f99e420b64a19008ed62a88891bcb22cff6d70a1be6bd3366f0f2bd1fdb7c",
+      "bytes": 4405,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-templates/references/withdraw.md",
+      "sha256": "c8bba9313c0b5a778b37b68ef48f89f71f583070a2442db686d4a30b70b4401a",
+      "bytes": 8042,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-token-resolve/SKILL.md",
+      "sha256": "472c5f7fcf56b1cec8743650f8d5304e268eeda4b4f61fa857d14ada0887e1dd",
+      "bytes": 11387,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-token-resolve/references/resolution-detail.md",
+      "sha256": "34edc4d1742445da90927405164a7f1b65404e44b4434ddcdd6f7b7c01f58a66",
+      "bytes": 10154,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".agents/skills/sailor-transactions/SKILL.md",
+      "sha256": "3623f8049962e5792521832baec021225fa764c4e71d56e73497d32fcb6445e3",
+      "bytes": 6424,
+      "role": "agent-surface"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "77eb06c79994e67ae9837723d5e6e74bc517f4b661f0e68a8b373d617b1e4e7e",
+      "bytes": 474,
+      "role": "agent-surface"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "11f6bdbe9d83465483bcdb40167587745da0bed5d8f4cf6b706db5136167da93",
+      "bytes": 4007,
+      "role": "agent-surface"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ab9c533afb586901b564c2905b04868f3a25dc9130776ce9827c781f1c15b04d",
+      "bytes": 11078,
+      "role": "agent-surface"
+    },
+    {
+      "path": "contracts/.gitignore",
+      "sha256": "23cb9a518d8961912d010c0f096db7ad0f56764aa12763cd31680e0fdeae535a",
+      "bytes": 28,
+      "role": "agent-surface"
+    },
+    {
+      "path": "contracts/.sail/contracts/interfaces/IPermission.sol",
+      "sha256": "9db4b2bd3a3a7c1cc4e3cc35fc823544f4ef639b2be639f26a36305335a49265",
+      "bytes": 719,
+      "role": "contract"
+    },
+    {
+      "path": "contracts/README.md",
+      "sha256": "132b3d96abe458b33153285af9ad28a193da4b8318ee6eb96e20c7f6152fee93",
+      "bytes": 6223,
+      "role": "agent-surface"
+    },
+    {
+      "path": "contracts/foundry.toml",
+      "sha256": "952fa042119c7eea93434f082dcbdc311fa4b191d5695c34f7dd18c9aba766f5",
+      "bytes": 157,
+      "role": "agent-surface"
+    },
+    {
+      "path": "contracts/mandates/AcrossBridgePermission.sol",
+      "sha256": "714129c5a092977f9ce3ae625031789a2c69ec501051cee8ab0fcdb43dd06ace",
+      "bytes": 8224,
+      "role": "contract"
+    },
+    {
+      "path": "contracts/mandates/BoundedCallPermission.sol",
+      "sha256": "a5063ea8a2b5c54d98f5ac38ca060dc7c5dc643b8f571783c162f8318853a6a6",
+      "bytes": 2233,
+      "role": "contract"
+    },
+    {
+      "path": "contracts/mandates/BoundedErc20Approve.sol",
+      "sha256": "a442d0c3f4040b7822d38301ff2afc2294c417d6e1d35623819ab9c8be6e4617",
+      "bytes": 3350,
+      "role": "contract"
+    },
+    {
+      "path": "contracts/mandates/CctpBridgePermission.sol",
+      "sha256": "279006d1e602afb57b78ac2c4da1dbd7088e3f29c72e8479acb98867bd1a77c5",
+      "bytes": 4691,
+      "role": "contract"
+    },
+    {
+      "path": "contracts/mandates/ExactInputSwapPermission.sol",
+      "sha256": "3389978bbd64d6fdf20a379321f6d9d96a442762bf6a8e28ac79f3661271343f",
+      "bytes": 9593,
+      "role": "contract"
+    },
+    {
+      "path": "contracts/mandates/SailCalldata.sol",
+      "sha256": "ed55fba53f658652d4a8f9815ff97bdf2d09baaf949b427109f5b12c91d0a8df",
+      "bytes": 5991,
+      "role": "contract"
+    },
+    {
+      "path": "contracts/test/AcrossBridgePermission.t.sol",
+      "sha256": "131a622c260b08869ba47c3b0e828117164b4728899e637d524a03e1368880a4",
+      "bytes": 10251,
+      "role": "contract"
+    },
+    {
+      "path": "contracts/test/BoundedErc20Approve.t.sol",
+      "sha256": "7d82162e29713fb1b98230f49fe80481c8e4a6c15bfafddcb8dd4fe6b5047514",
+      "bytes": 4823,
+      "role": "contract"
+    },
+    {
+      "path": "contracts/test/CctpBridgePermission.t.sol",
+      "sha256": "56681a8a2be3d02ff1186ba18e5a3866e02933c23bbe202eaf88b969875d6aa9",
+      "bytes": 6870,
+      "role": "contract"
+    },
+    {
+      "path": "contracts/test/ExactInputSwapPermission.t.sol",
+      "sha256": "b8d05fe6e68968f2fcb5c25b3140fd800fe216961efa6924c1a3e028057f68bf",
+      "bytes": 21881,
+      "role": "contract"
+    },
+    {
+      "path": "dashboard/portfolio.html",
+      "sha256": "939295d6b6796428768e764ac21c9c5e9c7b6b26cebb975f75ac331a232d0aa3",
+      "bytes": 7085,
+      "role": "agent-surface"
+    },
+    {
+      "path": "dashboard/server.mjs",
+      "sha256": "958555b4a45ae4a2db7af4269169d13436aa8268f83387f84e5047e41f72f27e",
+      "bytes": 18166,
+      "role": "agent-surface"
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "dd74aa2334d806b1adbfb93f3d453d991fca6edca6c9c61930317ef178acc161",
+      "bytes": 144,
+      "role": "agent-surface"
+    },
+    {
+      "path": "package.json",
+      "sha256": "e43ac0fc09e6680d0a5f8534da9cd2b89fe3033a009ed2a8ba476a8af3af8aff",
+      "bytes": 1568,
+      "role": "config"
+    },
+    {
+      "path": "scripts/run-until-settled.sh",
+      "sha256": "872ae1da5e5c2cfbd55b5c8cf2594e8161798815c7a5de9babcc0f7d969cd5a2",
+      "bytes": 3748,
+      "role": "agent-surface"
+    },
+    {
+      "path": "scripts/settled.mjs",
+      "sha256": "0645773aaceb3dff23f37b7402841399b222d969e407f923601ca92b892b3c9c",
+      "bytes": 5333,
+      "role": "agent-surface"
+    },
+    {
+      "path": "scripts/settled.test.mjs",
+      "sha256": "6901696201d539fe1518bf0c94da062cda4154fbbde51e45f29ef9b56aad73f5",
+      "bytes": 4533,
+      "role": "agent-surface"
+    },
+    {
+      "path": "soul.md",
+      "sha256": "cabdd8a125c7583b524b4fb07fa26c672e35f4068b9fad3fa3717cc806a7fc57",
+      "bytes": 1637,
+      "role": "agent-surface"
+    },
+    {
+      "path": "src/agent.test.ts",
+      "sha256": "92c4d34d78644f2d68a21d99ddd013c6c7c7bae8b672f104f405c039459ce10c",
+      "bytes": 65842,
+      "role": "agent-surface"
+    },
+    {
+      "path": "src/agent.ts",
+      "sha256": "b312a39548829678a0dc37b8e0b73b47e2e57f662f9df0cd4312e523de5b1b5a",
+      "bytes": 74351,
+      "role": "agent-surface"
+    },
+    {
+      "path": "src/report.test.ts",
+      "sha256": "b176eda50444f9ebe8ee5c2d1c91a2cb3ad60840e4c52fc740be6c03ec629c28",
+      "bytes": 14878,
+      "role": "agent-surface"
+    },
+    {
+      "path": "src/report.ts",
+      "sha256": "cfb2278f9c2cd91a67fa08b89d1d4fb911f9b8416d01b98acd3b1317b0099d10",
+      "bytes": 16318,
+      "role": "agent-surface"
+    },
+    {
+      "path": "src/settled.test.ts",
+      "sha256": "6a5909d205ce8e15bdd6e14a257fd16abfba046ba412340535bd94fda34db29b",
+      "bytes": 229,
+      "role": "agent-surface"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "920b25acf6af961e4ca495da967a7f8be20903974ede3e6ba107549ee95908e8",
+      "bytes": 264,
+      "role": "config"
+    }
+  ],
+  "compatibility": {
+    "chains": [
+      1,
+      10,
+      130,
+      42161,
+      8453
+    ]
+  },
+  "provenance": {
+    "producedBy": "aadopico",
+    "producedAt": "2026-09-11T13:14:58.966Z"
+  }
+}
