@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "kind": "crystallized"
   },
-  "digest": "sha256:cee89efcd03102eaf0971b5b6b42a8ef72c18e9dcdfa58427ab98b9416ec06d5",
+  "digest": "sha256:288cec95aad28dbff9ab0f3ea3728168a7fead3f1d770c15c70cb7fe9dd54e5d",
   "contents": [
     {
       "path": ".agents/skill-registry.json",
@@ -405,8 +405,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "b07d2b0e033af574b42e184510cfcbcdd99e53f76ad932f65eed13e62b6d4181",
-      "bytes": 26308,
+      "sha256": "249807e0637ccf5c5c1756f934aa69da41f449308cad73190bbc97f0b1a73d7c",
+      "bytes": 27544,
       "role": "agent-surface"
     },
     {
@@ -593,6 +593,6 @@
   },
   "provenance": {
     "producedBy": "aadopico",
-    "producedAt": "2026-09-11T13:14:47.617Z"
+    "producedAt": "2026-09-11T14:23:16.009Z"
   }
 }
