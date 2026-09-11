@@ -8,6 +8,42 @@
 
 A Harbor agent never holds your private key and acts only through a **mandate**: deterministic onchain permissions checked on every transaction. That is what makes a Harbor agent safe to run with real money.
 
+## Start in Claude Code or Codex
+
+Use **Node.js 22+**. Run one of these commands in your terminal (or ask your coding agent to run it). Choose one agent; no repository clone or global Sailor installation is needed.
+
+**Portfolio:** choose your own assets and weights.
+
+```bash
+npx @sail.money/sailor@latest harbor create portfolio my-portfolio --no-agent
+```
+
+**Onchain Finance Portfolio:** start with the predefined basket and confirm its weights.
+
+```bash
+npx @sail.money/sailor@latest harbor create onchain-finance-portfolio my-onchain-portfolio --no-agent
+```
+
+Accept the npm installation prompt and review the blueprint import when prompted. Use a new folder name if the destination already exists. Sailor downloads the blueprint, verifies it, installs dependencies, and checks the project. `--no-agent` stops it from launching a second coding-agent session.
+
+**Next:** open the generated folder in Claude Code or Codex, then send:
+
+> Read AGENTS.md and guide me through setting up this portfolio agent.
+
+The coding agent helps you install Foundry, configure an RPC endpoint for each required chain, connect your owner wallet, confirm the strategy, and sign its permissions. It explains gas and registration costs before you fund or sign. Creating the project does not start trading.
+
+### Launch a coding agent from a standalone terminal
+
+If you want Sailor to launch the coding-agent CLI for you, omit `--no-agent`. The selected CLI must already be installed and on your PATH. For example:
+
+```bash
+# Codex
+npx @sail.money/sailor@latest harbor create onchain-finance-portfolio my-onchain-portfolio
+
+# Or Claude Code (choose this instead)
+npx @sail.money/sailor@latest harbor create onchain-finance-portfolio my-onchain-portfolio --agent claude
+```
+
 ## Available agents
 
 | Agent | Description |
@@ -28,20 +64,6 @@ A Harbor agent never holds your private key and acts only through a **mandate**:
 An agent in Harbor is a **blueprint**: a portable, verified package of a whole agent: its skills, its runtime, its permission contracts, and its operating guide. One command starts it, and your coding agent walks the onboarding.
 
 Every agent is different: its own strategy, its own onboarding questions, its own dashboard and reports. What they share is the safety model: self-custody, an onchain mandate, and a fail-closed permission check on every transaction.
-
-## Getting started
-
-Harbor commands ship with Sailor 2.3 and later.
-
-```bash
-npm install -g @sail.money/sailor@latest
-sailor harbor create portfolio                    # name your own basket
-sailor harbor create onchain-finance-portfolio    # start from the Onchain Finance Portfolio basket
-```
-
-`create` pulls the blueprint, verifies every file against its manifest, shows you what it will write, scaffolds the project, installs dependencies, typechecks the runtime, and opens your coding agent to onboard you. It launches `codex` by default; pass `--agent claude` (or any executable on your PATH) to use another, or `--no-agent` to open the folder yourself.
-
-Onboarding asks for the few things only you can provide: an RPC endpoint per chain, the owner wallet that holds custody, the assets and weights, and the mandate you sign. No keys are ever copied; the agent wallet is generated locally and encrypted.
 
 ## How the library works
 
