@@ -1,0 +1,21 @@
+name: Registry checks
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --test scripts/*.test.mjs
+      - run: npm install --global --ignore-scripts @sail.money/sailor@2.2.0-327
+      - name: Verify release payloads
+        run: |
+          while IFS= read -r -d '' artifact; do
+            sailor blueprint verify "$artifact"
+          done < <(find blueprints -name '*.tar.gz' -print0 2>/dev/null || true)
